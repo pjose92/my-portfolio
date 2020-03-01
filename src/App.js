@@ -1,20 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import NavBar from "./components/NavBar"
-import { Container } from "reactstrap";
+import Header from './components/Header/index';
 
-function App() {
-  return (
-    <div className="App">
-    <NavBar />
-      <header className="App-header">
-        <h1>Hello, I'm Jose Perez</h1>
-        <h2>I am a FullStack Web Developer from Chicago, IL</h2>
-        <h3>My portfolio is under construction</h3>
-      </header>
-    </div>
-  );
-}
+import Toolbar from "./components/Menu/Toolbar";
+import SideDrawer from "./components/Menu/SideDrawer";
+import Backdrop from "./components/Menu/Backdrop";
+
+import About from './components/About/index';
+import SkillSet from './components/SkillSet/index';
+import Projects from './components/Projects/index';
+import Footer from './components/Footer/index';
+
+
+
+
+
+
+const App = () => (
+  <div>
+    <Header />
+    <About />
+    <SkillSet />
+    <Projects />
+    {/* <Contact /> */}
+    <Footer />
+  </div>
+);
 
 export default App;
