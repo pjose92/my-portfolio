@@ -12,42 +12,38 @@ const Wrapper = styled.div`
 
 const Projects = [
   {
-    title: 'Rick and Morty Ultimate Fan App',
+    title: 'Rick and Morty Fan App',
     description:
-      "lala",
-    link: 'http://initior.ga',
+      "A Single Page Application with Client-Side Routing built in a three hour sprint challenge at Lambda School. Built with React, Reactstrap and React Router.",
+    link: 'https://github.com/pjose92/Sprint-Challenge-Single-Page-Apps/tree/jose-Perezguerrero',
+    link2: 'https://rickandmortyfanapp.netlify.com/',
+  },
+  {
+    title: 'React Wars',
+    description:
+      'React Wars is a web app that makes a request to SWAPI(Star Wars API) and fetches information about Star Wars characters. Built with React, Axios, Reactstrap.',
+    link: 'https://github.com/pjose92/Sprint-Challenge-React-Wars/tree/jose-Perezguerrero',
     link2: '#',
   },
   {
-    title: 'Butns',
+    title: 'NASA Photo of the Day',
     description:
-      'An advanced buttons library for your website, using a set of pre defined classes you can fully customize your buttons.',
-    link: 'http://butns.ml',
-  },
+      "This project uses NASA Photo of the Day API to retrieve daily content about cool discoveries or worth sharing facts by NASA. Built React, React Hooks, Axios.",
+    link: 'https://github.com/pjose92/nasa-photo-of-the-day/tree/jose-Perezguerrero',
+    link2: '#',  },
   {
-    title: 'gridcss',
+    title: 'InstaClone',
     description:
-      "A small, 565bytes minified grid system for these times where you don't need a fully fledged framework.",
-    link: 'https://github.com/ahmedtarek2134/grid.css',
-  },
+      'Built an Instagram clone page using React. Information comes from a dummy-data file not from an actual user account. Built with React.',
+    link: 'https://github.com/pjose92/React-Components-Insta-Clone/tree/jose-Perezguerrero',
+    link2: '#',  },
   {
-    title: 'Backspace',
+    title: 'Football Scoreboard',
     description:
-      'A fully featured, free website template for photography with google maps and smooth css animations to please the viewers',
-    link: 'https://github.com/ahmedtarek2134/Backspace',
-  },
-  {
-    title: 'Palettor',
-    description:
-      "A random color paletter generator for these times where you can't choose a color so you go random instead :)",
-    link: 'https://github.com/ahmedtarek2134/Palettor',
-  },
-  {
-    title: 'materializing colors',
-    description:
-      "All of google's material design colors in a form of variables in most popular css pre-processors",
-    link: 'https://github.com/ahmedtarek2134/MaterializingColors',
-  },
+      'A Football Scoreboard web app with functional start/stop/rest buttons that updates the web app. Built with React and React Hooks.',
+    link: 'https://github.com/pjose92/react-american-football-scoreboard/tree/jose-Perezguerrero',
+    link2: '#',  },
+      
 ];
 
 const Cards = Projects.map(project => (
