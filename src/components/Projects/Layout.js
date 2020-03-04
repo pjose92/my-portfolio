@@ -30,13 +30,13 @@ const Projects = [
     description:
       "This project uses NASA Photo of the Day API to retrieve daily content about cool discoveries or worth sharing facts by NASA. Built React, React Hooks, Axios.",
     link: 'https://github.com/pjose92/nasa-photo-of-the-day/tree/jose-Perezguerrero',
-    link2: '#',  },
+    link2: 'https://photoofthedaynasa.netlify.com/',  },
   {
     title: 'InstaClone',
     description:
       'Built an Instagram clone page using React. Information comes from a dummy-data file not from an actual user account. Built with React.',
     link: 'https://github.com/pjose92/React-Components-Insta-Clone/tree/jose-Perezguerrero',
-    link2: '#',  },
+    link2: 'cloneinsta.netlify.com',  },
   {
     title: 'Football Scoreboard',
     description:

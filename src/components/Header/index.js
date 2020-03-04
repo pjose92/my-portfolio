@@ -16,7 +16,15 @@ const Outer = styled.div`
   text-align: center;
   color: #fff;
   background: url(${background}) center center no-repeat fixed;
+  
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
   background-size: cover;
+
+  @media only screen and (min-width : 480px) and (max-width : 720px) {
+    background: url(${background}) no-repeat center center fixed;
+  }
 `;
 
 const IconsWrapper = styled.div`

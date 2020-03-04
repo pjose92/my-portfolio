@@ -14,7 +14,7 @@ const Name = styled.h1`
   font-family: Poiret One, Arial, Helvetica, sans-serif;
   margin: 0;
   @media (max-width: 580px) {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 `;
 

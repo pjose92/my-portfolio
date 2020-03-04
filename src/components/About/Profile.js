@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
-import { bounceInRight } from 'react-animations';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   width: 30%;
-  animation: ${props => (props.active ? keyframes`${bounceInRight}` : '')} 1s;
   @media (max-width: 876px) {
     width: 100%;
     margin-top: 50px;
