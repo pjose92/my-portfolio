@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { bounceInLeft } from 'react-animations';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -45,12 +44,12 @@ const SocialMediaLinks = () => (
       className="fa fa-file"
     />
     <Link
-      href="#"
+      href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/"
       target="_blank"
       className="fa fa-linkedin"
     />
     <Link
-      href="#"
+      href="https://github.com/pjose92"
       target="_blank"
       className="fa fa-github"
     />

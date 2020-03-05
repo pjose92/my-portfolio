@@ -45,8 +45,8 @@ const Footer = () => (
       <LinksWrapper>
         <Link href="#" className="fa fa-envelope fa-2x" />
         <Link href="#" className="fa fa-file fa-2x" />
-        <Link href="#" className="fa fa-linkedin fa-2x" />
-        <Link href="#" className="fa fa-github fa-2x" />
+        <Link href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/" className="fa fa-linkedin fa-2x" />
+        <Link href="https://github.com/pjose92" className="fa fa-github fa-2x" />
       </LinksWrapper>
     </div>
   </Wrapper>

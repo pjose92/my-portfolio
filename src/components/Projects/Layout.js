@@ -36,13 +36,13 @@ const Projects = [
     description:
       'Built an Instagram clone page using React. Information comes from a dummy-data file not from an actual user account. Built with React.',
     link: 'https://github.com/pjose92/React-Components-Insta-Clone/tree/jose-Perezguerrero',
-    link2: 'cloneinsta.netlify.com',  },
+    link2: 'https://cloneinsta.netlify.com',  },
   {
     title: 'Football Scoreboard',
     description:
       'A Football Scoreboard web app with functional start/stop/rest buttons that updates the web app. Built with React and React Hooks.',
     link: 'https://github.com/pjose92/react-american-football-scoreboard/tree/jose-Perezguerrero',
-    link2: '#',  },
+    link2: 'https://scoreboardfootball.netlify.com/',  },
       
 ];
 
