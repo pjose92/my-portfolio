@@ -40,9 +40,9 @@ const Projects = [
   {
     title: 'Football Scoreboard',
     description:
-      'A Football Scoreboard web app with functional start/stop/rest buttons that updates the web app. Built with React and React Hooks.',
+      'A Football Scoreboard web app with functional start/stop/rest buttons that updates the web app. Built with React and React Hooks.(Desktop Only)',
     link: 'https://github.com/pjose92/react-american-football-scoreboard/tree/jose-Perezguerrero',
-    link2: 'https://scoreboardfootball.netlify.com/',  },
+    link2: 'https://scoreboardfootball.netlify.com',  },
       
 ];
 
