@@ -22,7 +22,7 @@ const Outer = styled.div`
 	-o-background-size: cover;
   background-size: cover;
 
-  @media only screen and (min-width : 280px) and (max-width : 720px) {
+  @media only screen and (min-width : 380px) and (max-width : 720px) {
     background: url(${background}) no-repeat center center fixed;
   }
 `;

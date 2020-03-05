@@ -26,7 +26,7 @@ const Position = styled.p`
 
 const MainText = props => (
   <Wrapper style={{ left: props.left, top: props.top }}>
-    <Name>Jose Perezz</Name>
+    <Name>Jose Perez</Name>
     <Position>Front End Web Developer</Position>
   </Wrapper>
 );
