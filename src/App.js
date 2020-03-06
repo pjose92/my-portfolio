@@ -11,8 +11,10 @@ import Footer from './components/Footer/index';
 
 const App = () => (
   <div>
+
     <Header />
     <Nav />
+
     <About />
     <SkillSet />
     <Projects />
