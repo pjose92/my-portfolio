@@ -24,6 +24,8 @@ const LinksWrapper = styled.div`
 `;
 
 const Link = styled.a`
+  font-size: 3rem;
+
   text-decoration: none;
   color: #fff;
   transition: 0.2s;
@@ -32,22 +34,23 @@ const Link = styled.a`
     transform: scale(1.1);
   }
   @media (max-width: 580px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
 const Footer = () => (
   <Wrapper>
     <div>
-      <CopyRightText>
-        &copy; 2020 Jose Perez. All rights reserved.
-      </CopyRightText>
+      
       <LinksWrapper>
-        <Link href="#" className="fa fa-envelope fa-2x" />
-        <Link href="#" className="fa fa-file fa-2x" />
+        {/* <Link href="#" className="fa fa-envelope fa-2x" />
+        <Link href="#" className="fa fa-file fa-2x" /> */}
         <Link href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/" className="fa fa-linkedin fa-2x" />
         <Link href="https://github.com/pjose92" className="fa fa-github fa-2x" />
       </LinksWrapper>
+      <CopyRightText>
+        &copy; 2020 Jose Perez. All rights reserved.
+      </CopyRightText>
     </div>
   </Wrapper>
 );

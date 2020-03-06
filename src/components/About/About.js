@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import Mailto from 'react-protected-mailto'
 
 const Wrapper = styled.p`
   width: 70%;
@@ -29,7 +30,7 @@ const Paragraph = props => (
     </Link>{' '}
     and be sure to check out my{' '}
     <a
-      href="#"
+      href="https://github.com/pjose92"
       target="_blank"
       rel="noopener noreferrer"
       style={{ color: 'dodgerblue' }}
@@ -37,6 +38,25 @@ const Paragraph = props => (
       github
     </a>{' '}
     for my projects.
+
+    <br />
+    <br />
+    <br />
+    Download my resume <a
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: 'dodgerblue' }}
+    >
+      here.
+    </a>{' '}
+    <br />
+    Email me at <Mailto
+      email='pjose14.jp38@yahoo.com'
+      headers={
+        {subject:'Career Opportunity'},
+        {cc:''}
+      }/>
   </Wrapper>
 );
 

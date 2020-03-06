@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const Nav = styled.nav`
+
   padding: 0 20px;
   min-height: 9vh;
   background: #1c2022;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 `;
 
 const Logo = styled.h1`

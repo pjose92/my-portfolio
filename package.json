@@ -16,6 +16,8 @@
     "react": "^16.12.0",
     "react-animation": "^1.0.0",
     "react-dom": "^16.12.0",
+    "react-mailto": "^0.4.0",
+    "react-protected-mailto": "^1.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-scroll": "^1.7.16",

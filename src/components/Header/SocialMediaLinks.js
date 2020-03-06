@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const Wrapper = styled.div`
   position: absolute;
   left: 0;
@@ -16,7 +17,7 @@ const Link = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   text-align: center;
   transition: 0.2s;
   &:hover {
@@ -24,7 +25,7 @@ const Link = styled.a`
     background-color: black;
   }
   @media (max-width: 876px) {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     height: 50px;
     width: 50px;
   }
@@ -33,16 +34,6 @@ const Link = styled.a`
 
 const SocialMediaLinks = () => (
   <Wrapper>
-    <Link
-      href="#"
-      target="_blank"
-      className="fa fa-envelope"
-    />
-    <Link
-      href="#"
-      target="_blank"
-      className="fa fa-file"
-    />
     <Link
       href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/"
       target="_blank"
