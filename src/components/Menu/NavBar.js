@@ -1,152 +1,65 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
+import '../Menu/style.css'
 
-const Nav = styled.nav`
 
-  padding: 0 20px;
-  min-height: 9vh;
-  background: #1c2022;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-`;
+const Container = styled.nav``;
 
-const Logo = styled.h1`
-  font-size: 25px;
-  color: white;
-`;
 
-const Menu = styled.ul`
-  list-style: none;
-  display: flex;
-
-  li:nth-child(2) {
-    margin: 0px 20px;
-  }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const Item = styled.li``;
-
-const Link = styled.a`
-  color: white;
-  text-decoration: none;
-
-  :hover {
-    text-decoration: underline;
-  }
-`;
-
-const NavIcon = styled.button`
-  background: none;
-  cursor: pointer;
-  border: none;
-  outline: none;
-
-  @media (min-width: 769px) {
-    display: none;
-  }
-`;
-
-const Line = styled.span`
-  display: block;
-  border-radius: 50px;
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-  background-color: #fff;
-  transition: width 0.4s ease-in-out;
-
-  :nth-child(2) {
-    width: ${props => (props.open ? "40%" : "70%")};
-  }
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  height: ${props => (props.open ? "91vh" : 0)};
-  width: 100vw;
-  background: #1c2022;
-  transition: height 0.4s ease-in-out;
-
-  @media (min-width: 769px) {
-    display: none;
-  }
-`;
-
-const OverlayMenu = styled.ul`
-  list-style: none;
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-
-  li {
-    opacity: ${props => (props.open ? 1 : 0)};
-    font-size: 25px;
-    margin: 50px 0px;
-    transition: opacity 0.4s ease-in-out;
-  }
-
-  li:nth-child(2) {
-    margin: 50px 0px;
-  }
-`;
-
-const Header = () => {
-  const [toggle, toggleNav] = useState(false);
+function App() {
   return (
-    <>
-      <Nav>
-        <Logo>DevJP</Logo>
-        <Menu>
-          <Item>
-            <Link href="#about">
-              About
-            </Link>
-          </Item>
-          <Item>
-            <Link href="#skillset">
-              Skills
-            </Link>
-          </Item>
-          <Item>
-            <Link href="#projects">
-              Work
-            </Link>
-          </Item>
-        </Menu>
-        <NavIcon onClick={() => toggleNav(!toggle)}>
-          <Line open={toggle} />
-          <Line open={toggle} />
-          <Line open={toggle} />
-        </NavIcon>
-      </Nav>
-      <Overlay open={toggle}>
-        <OverlayMenu open={toggle}>
-          <Item>
-            <Link href="#about">
-              About
-            </Link>
-          </Item>
-          <Item>
-            <Link href="#skillset">
-              Skills
-            </Link>
-          </Item>
-          <Item>
-            <Link href="#projects">
-              Work
-            </Link>
-          </Item>
-        </OverlayMenu>
-      </Overlay>
-    </>
+    <div className="App">
+      <Navbar />
+    </div>
   );
-};
+}
 
-export default Header;
+class Navbar extends Component {
+  state = {
+    opened: false
+  };
+
+  toggle() {
+    this.setState({
+      opened: !this.state.opened
+    });
+  }
+
+  render() {
+    return (
+      <Container className="Navbar">
+        <div className="navbar-home">
+          <a href=".">
+            DevJP
+          </a>
+          <button className="toggle" onClick={this.toggle.bind(this)}>
+            <i
+              className={
+                "fas " + (this.state.opened ? "fa-angle-up" : "fa-angle-down")
+              }
+            />
+          </button>
+        </div>
+        <ul
+          className={
+            "navbar-links " + (this.state.opened ? "opened" : "closed")
+          }
+        >
+          <li className="navbar-link">
+            <a href=".">Becoming a host</a>
+          </li>
+          <li className="navbar-link">
+            <a href=".">Help</a>
+          </li>
+          <li className="navbar-link">
+            <a href=".">Sign up</a>
+          </li>
+          <li className="navbar-link">
+            <a href=".">Log in</a>
+          </li>
+        </ul>
+      </Container>
+    );
+  }
+}
+export default App;
