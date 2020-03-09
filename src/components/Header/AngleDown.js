@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   justify-content: center;
   text-align: center;
   @media (max-width: 580px) {
-    display: none;
+    display: flex;
   }
 `;
 
