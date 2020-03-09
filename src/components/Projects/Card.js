@@ -22,6 +22,9 @@ const Title = styled.h1`
   font-family: Pacifico, Helvetica, sans-serif;
   text-align: center;
   font-size: 2.3rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
   @media (max-width: 580px) {
     font-size: 2rem;
   }
@@ -32,6 +35,8 @@ const Description = styled.p`
   height: 90px;
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
+
 `;
 
 const ButtonWrapper = styled.div`
