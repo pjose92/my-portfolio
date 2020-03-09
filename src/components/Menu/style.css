@@ -1,6 +1,6 @@
 :root {
     --height-lg-screens: 80px;
-    --bg-color-lg-screens: #e4e3e2;
+    --bg-color-lg-screens: #b3d6ff;
   }
   
   .Navbar {
@@ -35,7 +35,7 @@
   }
   
   .navbar-link:hover {
-    border-bottom-color: yellow;
+    border-bottom-color: red;
   }
   
   .toggle {
@@ -59,7 +59,7 @@
       flex-direction: column; /* change the direction of the container */
   
       height: auto; /* overrides the height of 80px set for large screens */
-      background-color: white;
+      background-color: var(--bg-color-lg-screens);
     }
   
     .navbar-links {
@@ -85,7 +85,7 @@
   ul {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 18px;
   }
   
   li {

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import '../Menu/style.css'
 
 
-const Container = styled.nav``;
 
 
 function App() {
@@ -29,13 +28,13 @@ class Navbar extends Component {
     return (
       <Container className="Navbar">
         <div className="navbar-home">
-          <a href=".">
+          <a href="#home">
             DevJP
           </a>
           <button className="toggle" onClick={this.toggle.bind(this)}>
             <i
               className={
-                (this.state.opened ? "fas fa-angle-up" : "fas fa-angle-down")
+                (this.state.opened ? "fas fa-caret-up" : "fas fa-caret-down")
               }
             />
           </button>
@@ -62,4 +61,7 @@ class Navbar extends Component {
     );
   }
 }
+
+const Container = styled.nav``;
+
 export default App;
