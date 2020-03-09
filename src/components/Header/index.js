@@ -17,9 +17,10 @@ const Outer = styled.div`
   color: #fff;
   background: url(${background}) no-repeat center center fixed;  
   background-size: cover;
-  width: '100vw',
-  height: '100vh'
-
+  @media (max-width: 580px) {
+    background: url(${background}) no-repeat center center fixed;  
+    background-size: cover;
+  }
 `;
 
 const IconsWrapper = styled.div`
