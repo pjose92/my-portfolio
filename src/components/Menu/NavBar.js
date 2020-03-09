@@ -35,7 +35,7 @@ class Navbar extends Component {
           <button className="toggle" onClick={this.toggle.bind(this)}>
             <i
               className={
-                "fas " + (this.state.opened ? "fa-angle-up" : "fa-angle-down")
+                (this.state.opened ? "fas fa-angle-up" : "fas fa-angle-down")
               }
             />
           </button>
@@ -46,16 +46,16 @@ class Navbar extends Component {
           }
         >
           <li className="navbar-link">
-            <a href=".">Becoming a host</a>
+            <a href="#home">Home</a>
           </li>
           <li className="navbar-link">
-            <a href=".">Help</a>
+            <a href="#about">About</a>
           </li>
           <li className="navbar-link">
-            <a href=".">Sign up</a>
+            <a href="#skillset">Skills</a>
           </li>
           <li className="navbar-link">
-            <a href=".">Log in</a>
+            <a href="#projects">Work</a>
           </li>
         </ul>
       </Container>
