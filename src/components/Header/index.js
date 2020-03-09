@@ -16,9 +16,7 @@ const Outer = styled.div`
   text-align: center;
   color: #fff;
   background: url(${background}) no-repeat center center fixed;  
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+  
   background-size: cover;
 
 `;
