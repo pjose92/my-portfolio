@@ -31,12 +31,12 @@ class Navbar extends Component {
           <a href="#home">
             DevJP
           </a>
-          <button className="toggle" onClick={this.toggle.bind(this)}>
-            <i
+          <button className="toggle" onClick={this.toggle.bind(this)}> ///
+            {/* <i
               className={
                 (this.state.opened ? "fas fa-caret-up" : "fas fa-caret-down")
               }
-            />
+            /> */}
           </button>
         </div>
         <ul
