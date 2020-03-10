@@ -2,15 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import '../Menu/style.css'
 
-const Bar = styled.span`
-  display: flex;
-  width: 20px;
-  height: 6px;
-  margin-bottom: 7px;
-  background-color: #fff;
-`;
-
-
 
 function App() {
   return (
@@ -39,12 +30,11 @@ class Navbar extends Component {
             DevJP
           </a>
           <button className="toggle" onClick={this.toggle.bind(this)}>
-              <Bar />
-            {/* <i
+            <i
               className={
-                (this.state.opened ? "fas fa-caret-up" : "fas fa-caret-down")
+                (this.state.opened ? "fa fa-caret-up" : "fa fa-caret-down")
               }
-            /> */}
+            />
           </button>
         </div>
         <ul
