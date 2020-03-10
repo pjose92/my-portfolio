@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import background from '../../Assets/Coverr.jpeg';
+import background from '../../Assets/bg.jpg';
 import MainText from './MainText';
 import SocialMediaLinks from './SocialMediaLinks';
 import AngleDown from './AngleDown';
