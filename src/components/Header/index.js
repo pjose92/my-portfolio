@@ -17,7 +17,7 @@ const Outer = styled.div`
   color: #fff;
   background: url(${background}) no-repeat center center fixed;  
   background-size: cover;
-  @media (max-width: 580px) {
+  @media (min-width: 580px) {
     background: url(${background}) no-repeat center center fixed;  
     background-size: cover;
   }
