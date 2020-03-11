@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import background from '../../Assets/bg.jpg';
+import background from '../../Assets/Coverr.jpeg';
 import MainText from './MainText';
 import SocialMediaLinks from './SocialMediaLinks';
 import AngleDown from './AngleDown';
@@ -20,9 +20,9 @@ const Outer = styled.div`
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     background-image: url(${background});
-    background-position: "center";
-    background-repeat: "no-repeat";
-    height: "100vh";
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
  
 `;
