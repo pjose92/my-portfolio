@@ -4,6 +4,12 @@ import PropTypes from 'prop-types';
 
 const width = 100 / 3;
 
+const Img = styled.img`
+  height: 30%;
+  width: 100%;
+
+`
+
 const Wrapper = styled.div`
   width: ${width - 4}%;
   min-width: 300px;
@@ -61,6 +67,7 @@ const Button = styled.a`
 
 const Card = props => (
   <Wrapper>
+    <Img src={require('./test/test.jpeg')} alt="logo" className="brand-logo"/>
     <Title>{props.title}</Title>
     <Description>{props.description}</Description>
     <ButtonWrapper>
