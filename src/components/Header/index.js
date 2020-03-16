@@ -15,14 +15,15 @@ const Outer = styled.div`
   justify-content: center;
   text-align: center;
   color: #fff;
-  background: url(${background}) no-repeat center center fixed;  
-  background-size: cover;
+  background-color: black;
+  // background: url(${background}) no-repeat center center fixed;  
+  // background-size: cover;
 
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    background-image: url(${background});
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  // @media only screen and (min-width: 768px) and (max-width: 991px) {
+  //   background-image: url(${background});
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   height: 100vh;
   }
  
 `;

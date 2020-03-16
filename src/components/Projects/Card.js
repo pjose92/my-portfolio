@@ -67,7 +67,6 @@ const Button = styled.a`
 
 const Card = props => (
   <Wrapper>
-    <Img src={require('./test/test.jpeg')} alt="logo" className="brand-logo"/>
     <Title>{props.title}</Title>
     <Description>{props.description}</Description>
     <ButtonWrapper>

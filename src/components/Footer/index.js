@@ -4,11 +4,12 @@ import background from '../../Assets/Cover.jpeg';
 
 const Wrapper = styled.div`
   min-height: 200px;
-  background: url(${background}) center center no-repeat fixed;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: black;
+  // background: url(${background}) center center no-repeat fixed;
+  // background-size: cover;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 `;
 
 const CopyRightText = styled.p`
@@ -29,7 +30,7 @@ const Link = styled.a`
   text-decoration: none;
   color: #fff;
   transition: 0.2s;
-  margin: 0 15px;
+  margin: 30px 15px;
   &:hover {
     transform: scale(1.1);
   }
