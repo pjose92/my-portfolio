@@ -22,8 +22,8 @@ const SkillsetLink = styled.span`
 const Paragraph = props => (
   <Wrapper active={props.active}>
     Hello, welcome to my portfolio, I am studying Full-Stack Web Development and Computer Science at Lambda School from Chicago, IL. My passion
-    is coding. If I'm not moving, growing and learning then I make sure to find a way to do so. I am eager to 
-    create web solutions that inspire, educate and empower people. I love bringing ideas to life. Never afraid of taking on a new challenge.
+    is coding. If I'm not moving, growing, or learning then I make sure to find a way to do so. I am eager to 
+    create web solutions that inspire, educate, and empower people. I love bringing ideas to life and I'm never afraid of taking on a new challenge.
     Check my {' '}
     <Link to="skillset" spy={true} smooth={true}>
       <SkillsetLink>full skills set here</SkillsetLink>
@@ -35,7 +35,7 @@ const Paragraph = props => (
       rel="noopener noreferrer"
       style={{ color: 'dodgerblue' }}
     >
-      github
+      GitHub
     </a>{' '}
     for my projects.
 
