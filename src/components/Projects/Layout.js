@@ -12,18 +12,18 @@ const Wrapper = styled.div`
 
 const Projects = [
   {
+    title: 'React ToDo List Web App',
+    description:
+      "To-Do app developed in React with class components. The App can be added, checked off and clear all the list after completed. Built with React and Material UI.",
+    link: 'https://github.com/pjose92/React-Todo/tree/jose-Perezguerrero',
+    link2: 'https://doreact.netlify.com',
+  },
+  {
     title: 'Rick and Morty Fan App',
     description:
       "A Single Page Application with Client-Side Routing built in a three hour sprint challenge at Lambda School. Built with React, Reactstrap and React Router.",
     link: 'https://github.com/pjose92/Sprint-Challenge-Single-Page-Apps/tree/jose-Perezguerrero',
     link2: 'https://rickandmortyfanapp.netlify.com/',
-  },
-  {
-    title: 'React Wars',
-    description:
-      'React Wars is a web app that makes a request to SWAPI(Star Wars API) and fetches information about Star Wars characters. Built with React, Axios, Reactstrap.',
-    link: 'https://github.com/pjose92/Sprint-Challenge-React-Wars/tree/jose-Perezguerrero',
-    link2: '#',
   },
   {
     title: 'NASA Photo of the Day',

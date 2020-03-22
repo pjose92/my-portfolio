@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import Mailto from 'react-protected-mailto'
-
+import PDF from "../About/josePFrontEnd.pdf"
 const Wrapper = styled.p`
   width: 70%;
   line-height: 1.6;
@@ -21,7 +21,7 @@ const SkillsetLink = styled.span`
 
 const Paragraph = props => (
   <Wrapper active={props.active}>
-    Hello, welcome to my portfolio, I am studying Full-Stack Web Development and Computer Science at Lambda School from Chicago, IL. My passion
+    Hello I'm Jose, welcome to my portfolio, I am studying Full-Stack Web Development and Computer Science at Lambda School from Chicago, IL. My passion
     is coding. If I'm not moving, growing, or learning then I make sure to find a way to do so. I am eager to 
     create web solutions that inspire, educate, and empower people. I love bringing ideas to life and I'm never afraid of taking on a new challenge.
     Check my {' '}
@@ -32,7 +32,6 @@ const Paragraph = props => (
     <a
       href="https://github.com/pjose92"
       target="_blank"
-      rel="noopener noreferrer"
       style={{ color: 'dodgerblue' }}
     >
       GitHub
@@ -42,10 +41,9 @@ const Paragraph = props => (
     <br />
     <br />
     <br />
-    Download my resume <a
-      href="#"
+    My resume <a
+      href= {PDF}
       target="_blank"
-      rel="noopener noreferrer"
       style={{ color: 'dodgerblue' }}
     >
       here.

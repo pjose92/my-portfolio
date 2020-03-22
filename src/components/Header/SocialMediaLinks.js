@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PDF from '../About/josePFrontEnd.pdf'
 
 
 const Wrapper = styled.div`
@@ -43,6 +44,11 @@ const SocialMediaLinks = () => (
       href="https://github.com/pjose92"
       target="_blank"
       className="fa fa-github"
+    />
+    <Link
+      href={PDF}
+      target="_blank"
+      className="fa fa-file"
     />
   </Wrapper>
 );

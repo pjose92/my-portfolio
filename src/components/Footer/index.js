@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import background from '../../Assets/Cover.jpeg';
+import PDF from '../About/josePFrontEnd.pdf'
 
 const Wrapper = styled.div`
   min-height: 200px;
@@ -48,6 +49,7 @@ const Footer = () => (
         <Link href="#" className="fa fa-file fa-2x" /> */}
         <Link href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/" className="fa fa-linkedin fa-2x" />
         <Link href="https://github.com/pjose92" className="fa fa-github fa-2x" />
+        <Link href={PDF}  target="_blank" className="fa fa-file" />
       </LinksWrapper>
       <CopyRightText>
         &copy; 2020 Jose Perez. All rights reserved.
