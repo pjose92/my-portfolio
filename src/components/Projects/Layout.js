@@ -14,7 +14,7 @@ const Projects = [
   {
     title: 'React ToDo List Web App',
     description:
-      "To-Do app developed in React with class components. The App can be added, checked off and clear all the list after completed. Built with React and Material UI.",
+      "To-Do app developed in React with class components. The App can add, cross off and clear all the list after completed. With localStorge you can refresh the page and your list will still be there. Built with React and Material UI.",
     link: 'https://github.com/pjose92/React-Todo/tree/jose-Perezguerrero',
     link2: 'https://doreact.netlify.com',
   },
