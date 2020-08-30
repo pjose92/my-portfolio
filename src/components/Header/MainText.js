@@ -2,10 +2,10 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Avatar, Grid, Box } from '@material-ui/core';
+import { Typography, Box } from '@material-ui/core';
 import Typed from 'react-typed'
 import IconButton from '@material-ui/core/IconButton';
-import { GitHub, LinkedIn, Description } from '@material-ui/icons';
+import { GitHub, LinkedIn } from '@material-ui/icons';
 // import PDF from '../About/josePFrontEnd.pdf'
 
 

@@ -31,7 +31,7 @@ const Paragraph = props => (
     and be sure to check out my{' '}
     <a
       href="https://github.com/pjose92"
-      target="_blank"
+      // target="_blank"
       style={{ color: 'dodgerblue' }}
     >
       GitHub
@@ -43,7 +43,7 @@ const Paragraph = props => (
     <br />
     My resume <a
       href= {PDF}
-      target="_blank"
+      // target="_blank"
       style={{ color: 'dodgerblue' }}
     >
       here.
@@ -52,8 +52,7 @@ const Paragraph = props => (
     Email me at <Mailto
       email='pjose14.jp38@yahoo.com'
       headers={
-        {subject:'Career Opportunity'},
-        {cc:''}
+        {subject:'Career Opportunity'}
       }/>
   </Wrapper>
 );

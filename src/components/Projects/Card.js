@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 const width = 100 / 3;
 
-const Img = styled.img`
-  height: 30%;
-  width: 100%;
+// const Img = styled.img`
+//   height: 30%;
+//   width: 100%;
 
-`
+// `
 
 const Wrapper = styled.div`
   width: ${width - 4}%;
