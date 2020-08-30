@@ -10,7 +10,15 @@ const Wrapper = styled.div`
   margin: 3% 0;
 `;
 
+
 const Projects = [
+  {
+    title: 'The Game of Life',
+    description:
+      "Built a web representation of John Conway's Game of Life. Built in CSS, Styled-Components, JavaScript, React",
+    link: 'https://github.com/pjose92/game-of-life',
+    link2: 'https://thegame-of-life.netlify.app/',
+  },
   {
     title: 'React ToDo List Web App',
     description:
