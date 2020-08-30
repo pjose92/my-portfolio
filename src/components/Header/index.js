@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import background from '../../Assets/Coverr.jpeg';
 import MainText from './MainText';
-import SocialMediaLinks from './SocialMediaLinks';
+// import SocialMediaLinks from './SocialMediaLinks';
 import AngleDown from './AngleDown';
 
 
@@ -60,7 +60,7 @@ class Header extends Component {
       <Outer id="home" onMouseMove={this.outerHovered}>
         <MainText left={this.state.left} top={this.state.top} />
         <IconsWrapper>
-          <SocialMediaLinks />
+          {/* <SocialMediaLinks /> */}
           <AngleDown />
         </IconsWrapper>
       </Outer>
