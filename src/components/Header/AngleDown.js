@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const Icon = styled.span`
   text-decoration: none;
   color: white;
-  font-size: 3.6rem;
+  font-size: 2rem;
   cursor: pointer;
   border: 2px white solid;
   border-radius: 30px;

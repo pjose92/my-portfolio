@@ -15,7 +15,8 @@ const Outer = styled.div`
   justify-content: center;
   text-align: center;
   color: #fff;
-  background-color: black;
+  background-color: #252525;
+  ;
   // background: url(${background}) no-repeat center center fixed;  
   // background-size: cover;
 
