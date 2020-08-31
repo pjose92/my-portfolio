@@ -5,7 +5,7 @@ import Wrapper from '../SectionWrapper';
 
 import "./App.css";
 import { IconContext } from "react-icons";
-import { FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaPython, FaLess } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaPython, FaLess, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
 class SkillSet extends Component {
@@ -29,10 +29,11 @@ class SkillSet extends Component {
         <Title text="Skills Set" />
 
         <div className="icons-about">
-            <IconContext.Provider value={{ size: "3em", color: "#474242" }}>
+            <IconContext.Provider value={{ size: "2.5em", color: "#474242" }}>
               <FaHtml5 />
               <FaCss3Alt />
               <FaLess />
+              <FaBootstrap />
               <IoLogoJavascript />
               <FaReact />
               <FaDatabase />
