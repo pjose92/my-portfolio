@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import Title from '../SectionTitle';
-import Layout from './Layout';
+// import Layout from './Layout';
 import Wrapper from '../SectionWrapper';
+
+import "./App.css";
+import { IconContext } from "react-icons";
+import { FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaPython, FaLess } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 
 class SkillSet extends Component {
   constructor() {
@@ -22,11 +27,18 @@ class SkillSet extends Component {
     return (
       <Wrapper id="skillset">
         <Title text="Skills Set" />
-        <Layout
-          active={this.state.active}
-          onEnter={this.onEnter}
-          onLeave={this.onLeave}
-        />
+
+        <div className="icons-about">
+            <IconContext.Provider value={{ size: "3em", color: "#474242" }}>
+              <FaHtml5 />
+              <FaCss3Alt />
+              <FaLess />
+              <IoLogoJavascript />
+              <FaReact />
+              <FaDatabase />
+              <FaPython />
+            </IconContext.Provider>
+          </div>
       </Wrapper>
     );
   }
