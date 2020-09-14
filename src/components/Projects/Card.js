@@ -61,6 +61,7 @@ const Button = styled.a`
   &:hover {
     background-color: #111;
     color: #fff;
+    text-decoration: none;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 `;
