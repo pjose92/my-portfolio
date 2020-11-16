@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import '../Menu/style.css'
 
-
-
-
 function App() {
   return (
     <div className="App">

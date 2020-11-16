@@ -45,15 +45,15 @@ const Header = () => {
   return (
     <Box className={classes.typedContainer}>
       <Typography className={classes.title} variant="h3">
-        <Typed strings={["Jose Perez"]} typeSpeed={30} />
+        <Typed strings={["Jose Perez."]} typeSpeed={30} />
       </Typography>
       <br />
       <Typography className={classes.subtitle} variant="h4">
         <Typed
           strings={[
-            "Lambda School Student",
-            "Software Engineer",
-            "Front End Developer"
+            "Full-Stack Web Developer",
+            "Front End Developer",
+            "Software Engineer"
           ]}
           typeSpeed={30}
           backSpeed={60}
