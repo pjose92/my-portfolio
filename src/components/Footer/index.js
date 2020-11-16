@@ -44,11 +44,12 @@ const Link = styled.a`
 const Footer = () => (
   <Wrapper>
     <div>
-      
+
       <LinksWrapper>
-        {/* <Link href="#" className="fa fa-envelope fa-2x" />
-        <Link href="#" className="fa fa-file fa-2x" /> */}
-        <Link href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/" className="fa fa-linkedin fa-2x" />
+
+        <Link href={"https://github.com/pjose92"} target="_blank" className="fa fa-github fa-2x" />
+        <Link href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/" target="_blank" className="fa fa-linkedin fa-2x" />
+        <Link href={"https://twitter.com/jpDev7"} target="_blank" className="fa fa-twitter fa-2x" />
         <Link href={PDF}  target="_blank" className="fa fa-file" />
       </LinksWrapper>
       <CopyRightText>
