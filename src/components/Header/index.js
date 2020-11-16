@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import background from '../../Assets/bg1.jpeg';
-import background2 from '../../Assets/pattern.png';
 
 import MainText from './MainText';
 // import SocialMediaLinks from './SocialMediaLinks';
@@ -19,14 +18,14 @@ const Outer = styled.div`
   color: #fff;
   background-color: #1c232c;
   ;
-  background: url(${background}) no-repeat center center fixed; 
-  background-size: cover;
+  // background: url(${background}) no-repeat center center fixed; 
+  // background-size: cover;
 
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    background-image: url(${background});
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  // @media only screen and (min-width: 768px) and (max-width: 991px) {
+  //   background-image: url(${background});
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   height: 100vh;
   }
  
 `;
