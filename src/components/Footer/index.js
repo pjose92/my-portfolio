@@ -1,16 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import background from '../../Assets/Cover.jpeg';
 import PDF from '../About/josePFrontEnd.pdf'
 
 const Wrapper = styled.div`
   min-height: 200px;
-  background-color: black;
-  // background: url(${background}) center center no-repeat fixed;
-  // background-size: cover;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  background-color: #232d38;
+
 `;
 
 const CopyRightText = styled.p`
@@ -26,14 +21,20 @@ const LinksWrapper = styled.div`
 `;
 
 const Link = styled.a`
-  font-size: 3rem;
-
+  font-size: 2rem;
   text-decoration: none;
-  color: #fff;
+  color: #f2f2f2;
   transition: 0.2s;
   margin: 30px 15px;
+  background-color: #1b232c;
+  border-radius: 30px;
+  padding: 13px;
   &:hover {
     transform: scale(1.1);
+    text-decoration: none;
+    background-color: #fff;
+    color: #111;
+    
   }
   @media (max-width: 580px) {
     font-size: 2.5rem;
@@ -48,7 +49,6 @@ const Footer = () => (
         {/* <Link href="#" className="fa fa-envelope fa-2x" />
         <Link href="#" className="fa fa-file fa-2x" /> */}
         <Link href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/" className="fa fa-linkedin fa-2x" />
-        <Link href="https://github.com/pjose92" />
         <Link href={PDF}  target="_blank" className="fa fa-file" />
       </LinksWrapper>
       <CopyRightText>
