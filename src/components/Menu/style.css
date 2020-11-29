@@ -1,91 +1,94 @@
-:root {
-    --height-lg-screens: 80px;
-    --bg-color-lg-screens: #232d38;
-  }
-  
-  .Navbar {
-    display: flex;
-    justify-content: space-between;
-    /* by default: align-items: strech -> child elements' heights = the container's height */
-  
-    height: var(--height-lg-screens); /* set a fixed height */
-    background-color: var(--bg-color-lg-screens);
-  }
-  
-  .navbar-links {
-    display: flex;
-    /* align-items: stretch; by default */
-  }
-  
-  .navbar-home,
-  .navbar-link {
-    display: flex;
-    align-items: center; /* we want children to be centered vertically*/
-  
-    padding: 16px; /* with paddings on the sides */
-  }
-  
-  .navbar-home {
-    height: var(--height-lg-screens); /* it needs to stay inside the nav bar */
-    box-sizing: border-box;
-  }
-  
-  .navbar-link {
-    border-bottom: 2px solid var(--bg-color-lg-screens);
-  }
-  
-  .navbar-link:hover {
-    border-bottom-color: red;
-  }
-  
-  .toggle {
-    display: none;
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  .logo {
-    width: 34px;
-    height: 34px;
-  }
-  
-  /**
-  *
-  * Smaller screen + Mobile
-  *
-  */
-  @media screen and (max-width: 800px) {
-    .Navbar {
-      flex-direction: column; /* change the direction of the container */
-  
-      height: auto; /* overrides the height of 80px set for large screens */
-      background-color: var(--bg-color-lg-screens);
-    }
-  
-    .navbar-links {
-      flex-direction: column;
-    }
-  
-    .navbar-links.closed {
-      /* when toggled, hide the main nav*/
-      display: none;
-    }
-  
-    .toggle {
-      display: block;
-    }
-  
-    .navbar-link {
-      border-bottom: none;
-    }
-  }
-  
-  button {
-    background-color: transparent;
-    border: none;
-  }
-  
- 
-  
+.Header {
+  /* position: fixed; */
+  top: 0; /* Stick it to the top */
+  max-height: 70px;
+  width: 100vw;
+  background-color: #232d38;
 
+  display: grid;
+  grid-template-areas: "logo nav";
+
+  /* Cosmetics */
+ 
+  box-shadow: 0 4px 8px 0 #04c2c9;
+}
+
+.Logo {
+  grid-area: logo;
+  height: 70px;
+  color: white;
+}
+
+.Nav {
+  display: grid;
+  grid-area: nav;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
   
+}
+.Nav a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.Nav a:hover {
+  transform: scale(1.1);
+}
+
+.Burger {
+  display: none;
+  grid-area: burger;
+  margin: 0 20px 0 0;
+  padding: 0;
+  justify-self: end;
+  font-size: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.1s;
+  color: white;
+}
+.Burger:active {
+  transform: scale(1.2);
+}
+
+@media (max-width: 700px) {
+  .Header {
+    grid-template-areas: "logo burger" "nav nav";
+  }
+  .Nav {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: none;
+    grid-row-gap: 20px;
+
+    padding: 30px 0 30px;
+    background: #232d38;
+    box-shadow: 0 4px 8px 0 #04c2c9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .Burger {
+    display: inline;
+  }
+}
+
+.NavAnimation-enter {
+  opacity: 0;
+  transform: scale(0.5);
+}
+.NavAnimation-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 350ms, transform 350ms;
+}
+.NavAnimation-exit {
+  opacity: 1;
+}
+.NavAnimation-exit-active {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 350ms, transform 350ms;
+}
