@@ -1,14 +1,9 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-// import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Box } from '@material-ui/core';
 import Typed from 'react-typed'
 import IconButton from '@material-ui/core/IconButton';
 import { GitHub, LinkedIn } from '@material-ui/icons';
-// import PDF from '../About/josePFrontEnd.pdf'
-
-
  
 const useStyle = makeStyles(theme => ({
   title: {
@@ -68,46 +63,9 @@ const Header = () => {
         <IconButton className={classes.socialButton} onClick={() => window.open('https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/')}>
           <LinkedIn fontSize='inherit' />
         </IconButton>
-        {/* <IconButton className={classes.socialButton} onClick={() => window.open({PDF})}>
-          <Description fontSize='inherit' />
-        </IconButton> */}
       </Box>
     </Box>
   )
 }
 
 export default Header;
-// const Wrapper = styled.div`
-//   position: relative;
-//   @media (max-width: 580px) {
-//     margin: 5% 0;
-//   }
-// `;
-
-// const Name = styled.h1`
-//   font-size: 7rem;
-//   margin: 0;
-//   @media (max-width: 580px) {
-//     font-size: 4.5rem;
-//   }
-// `;
-
-// const Position = styled.p`
-//   margin: 5px 0 0 0;
-//   font-size: 2rem;
-
-// `;
-
-// const MainText = props => (
-//   <Wrapper style={{ left: props.left, top: props.top }}>
-//     <Name>Jose Perez</Name>
-//     <Position>Front End Web Developer</Position>
-//   </Wrapper>
-// );
-
-// MainText.propTypes = {
-//   left: PropTypes.string.isRequired,
-//   top: PropTypes.string.isRequired,
-// };
-
-// export default MainText;

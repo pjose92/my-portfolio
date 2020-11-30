@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import Mailto from 'react-protected-mailto'
 import PDF from "../About/josePFrontEnd.pdf"
+
+
 const Wrapper = styled.p`
   width: 70%;
   line-height: 1.6;

@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   margin: 3% 0;
 `;
 
-
 const Projects = [
   {
     title: 'The Game of Life',

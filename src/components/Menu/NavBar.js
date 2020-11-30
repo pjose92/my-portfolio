@@ -1,93 +1,124 @@
-// import React, { Component } from "react";
-// import styled from "styled-components";
-// import '../Menu/style.css'
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import clsx from "clsx";
+import { makeStyles } from "@material-ui/core/styles";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import { FiMenu } from "react-icons/fi";
+import { AiOutlineClose } from "react-icons/ai";
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <Navbar />
-//     </div>
-//   );
-// }
+import "../Menu/style.css";
 
-// class Navbar extends Component {
-//   state = {
-//     opened: false
-//   };
+const useStyles = makeStyles({
+  list: {
+    width: 250,
+  },
+  fullList: {
+    width: "auto",
+  },
+});
 
-//   toggle() {
-//     this.setState({
-//       opened: !this.state.opened
-//     });
-//   }
+export default function SwipeableTemporaryDrawer() {
+  const classes = useStyles();
+  const [open, setOpen] = useState(false);
 
-//   render() {
-//     return (
-//       <Container className="Navbar">
-//         <div className="navbar-home">
-//           <a href="#home">
-//             DevJP
-//           </a>
-//           <button className="toggle" onClick={this.toggle.bind(this)}>
-//             <i
-//               className={
-//                 (this.state.opened ? "fa fa-caret-up" : "fa fa-caret-down")
-//               }
-//             />
-//           </button>
-//         </div>
-//         <ul
-//           className={
-//             "navbar-links " + (this.state.opened ? "opened" : "closed")
-//           }
-//         >
-//           <li className="navbar-link">
-//             <a href="#home">Home</a>
-//           </li>
-//           <li className="navbar-link">
-//             <a href="#about">About</a>
-//           </li>
-//           <li className="navbar-link">
-//             <a href="#skillset">Skills</a>
-//           </li>
-//           <li className="navbar-link">
-//             <a href="#projects">Work</a>
-//           </li>
-//         </ul>
-//       </Container>
-//     );
-//   }
-// }
+  const toggleDrawer = open => event => {
+    if (
+      event &&
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
 
-// const Container = styled.nav``;
+    setOpen(open);
+  };
 
-// export default App;
+  const list = anchor => (
+    <div
+      className={clsx(classes.list, {
+        [classes.fullList]: anchor === "top",
+      })}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
+    >
+      <Link to="home" spy={true} smooth={true}>
+        <ListItem button onClick={() => setOpen(false)}>
+          <ListItemText primary="HOME" />
+        </ListItem>
+      </Link>
 
-/* eslint-disable jsx-a11y/accessible-emoji */
-import React from "react";
-import styled from "styled-components";
-import Burger from "./Burger";
+      <Link to="about" spy={true} smooth={true}>
+        <ListItem button onClick={() => setOpen(false)}>
+          <ListItemText primary="ABOUT" />
+        </ListItem>
+      </Link>
 
-const Nav = styled.nav`
-  width: 100%;
-  height: 55px;
-  border-bottom: 2px solid #f1f1f1;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  .logo {
-    padding: 15px 0;
-  }
-`;
+      <Link to="projects" spy={true} smooth={true} offset={-65}>
+        <ListItem button onClick={() => setOpen(false)}>
+          <ListItemText primary="PORTFOLIO" />
+        </ListItem>
+      </Link>
 
-const Navbar = () => {
-  return (
-    <Nav>
-      <div className="logo">DevJP</div>
-      <Burger />
-    </Nav>
+      <Link to="contact-container" spy={true} smooth={true} offset={-45}>
+        <ListItem button onClick={() => setOpen(false)}>
+          <ListItemText primary="CONTACT" />
+        </ListItem>
+      </Link>
+    </div>
   );
-};
 
-export default Navbar;
+  return (
+    <div className="nav-bar">
+      <div className="desktop">
+        <Link to="home" spy={true} smooth={true} duration={400}>
+          HOME
+        </Link>
 
+        <Link to="about" spy={true} smooth={true} duration={600} offset={10}>
+          ABOUT
+        </Link>
+
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={600}
+          offset={-60}
+        >
+          PORTFOLIO
+        </Link>
+
+        <Link
+          to="contact-container"
+          spy={true}
+          smooth={true}
+          duration={600}
+          offset={-47}
+        >
+          CONTACT
+        </Link>
+      </div>
+
+      <div className="mobile">
+        <div className="drop-down-menu">
+          <FiMenu onClick={toggleDrawer(true)} className="menu-icon" />
+
+          <SwipeableDrawer
+            anchor={"top"}
+            open={open}
+            onClose={toggleDrawer(false)}
+            onOpen={toggleDrawer(true)}
+            transitionDuration={300}
+          >
+            <AiOutlineClose onClick={toggleDrawer(false)} />
+
+            {list("top")}
+          </SwipeableDrawer>
+        </div>
+      </div>
+    </div>
+  );
+}

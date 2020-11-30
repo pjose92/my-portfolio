@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Title from '../SectionTitle';
-// import Layout from './Layout';
 import Wrapper from '../SectionWrapper';
 
 import "./App.css";
