@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header/index';
 
 import Nav from "./components/Menu/NavBar";
@@ -9,16 +9,26 @@ import Projects from './components/Projects/index';
 import Footer from './components/Footer/index';
 
 
-const App = () => (
+
+const App = () => {
+
+  const [navbarOpen, setnavbarOpen] = useState(false);
+
+  const handleNavbar = () => {
+    setnavbarOpen(!navbarOpen);
+  };
+
+  return (
   <div>
 
     <Header />
-    <Nav />
+    <Nav navbarState={navbarOpen} handleNavbar={handleNavbar} />
     <About />
     <SkillSet />
     <Projects />
     <Footer />
   </div>
-);
+  );
+};
 
 export default App;

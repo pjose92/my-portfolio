@@ -1,124 +1,89 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
-import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
-import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import { FiMenu } from "react-icons/fi";
-import { AiOutlineClose } from "react-icons/ai";
+import React from "react";
+import styled from "styled-components";
 
-import "../Menu/style.css";
+import Brand from "./Brand";
+import BurgerMenu from "./BurgerMenu";
+import CollapseMenu from "./CollapseMenu";
 
-const useStyles = makeStyles({
-  list: {
-    width: 250,
-  },
-  fullList: {
-    width: "auto",
-  },
-});
+const Navbar = props => {
+  return (
+    <>
+      <NavBar>
+        <FlexContainer>
+          <Brand />
+          <NavLinks>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="skillset">Skills</a>
+            <a href="projects">Projects</a>
+          </NavLinks>
+          <BurgerWrapper>
+            <BurgerMenu
+              navbarState={props.navbarState}
+              handleNavbar={props.handleNavbar}
+            />
+          </BurgerWrapper>
+        </FlexContainer>
+      </NavBar>
+      <CollapseMenu
+        navbarState={props.navbarState}
+        handleNavbar={props.handleNavbar}
+      />
+    </>
+  );
+};
 
-export default function SwipeableTemporaryDrawer() {
-  const classes = useStyles();
-  const [open, setOpen] = useState(false);
+export default Navbar;
 
-  const toggleDrawer = open => event => {
-    if (
-      event &&
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
+const NavBar = styled.nav`
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #0d2538;
+  z-index: 1;
+  font-size: 1.4rem;
+`;
+
+const FlexContainer = styled.div`
+  max-width: 120rem;
+  display: flex;
+  margin: auto;
+  padding: 0 2rem;
+  justify-content: space-between;
+  height: 5rem;
+`;
+
+const NavLinks = styled.ul`
+  justify-self: end;
+  list-style-type: none;
+  margin: auto 0;
+
+  & a {
+    color: #dfe6e9;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    margin: 0 1.5rem;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #04c2c9;
+      border-bottom: 1px solid #04c2c9;
     }
 
-    setOpen(open);
-  };
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+`;
 
-  const list = anchor => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top",
-      })}
-      role="presentation"
-      onClick={toggleDrawer(false)}
-      onKeyDown={toggleDrawer(false)}
-    >
-      <Link to="home" spy={true} smooth={true}>
-        <ListItem button onClick={() => setOpen(false)}>
-          <ListItemText primary="HOME" />
-        </ListItem>
-      </Link>
+const BurgerWrapper = styled.div`
+  margin: auto 0;
 
-      <Link to="about" spy={true} smooth={true}>
-        <ListItem button onClick={() => setOpen(false)}>
-          <ListItemText primary="ABOUT" />
-        </ListItem>
-      </Link>
-
-      <Link to="projects" spy={true} smooth={true} offset={-65}>
-        <ListItem button onClick={() => setOpen(false)}>
-          <ListItemText primary="PORTFOLIO" />
-        </ListItem>
-      </Link>
-
-      <Link to="contact-container" spy={true} smooth={true} offset={-45}>
-        <ListItem button onClick={() => setOpen(false)}>
-          <ListItemText primary="CONTACT" />
-        </ListItem>
-      </Link>
-    </div>
-  );
-
-  return (
-    <div className="nav-bar">
-      <div className="desktop">
-        <Link to="home" spy={true} smooth={true} duration={400}>
-          HOME
-        </Link>
-
-        <Link to="about" spy={true} smooth={true} duration={600} offset={10}>
-          ABOUT
-        </Link>
-
-        <Link
-          to="projects"
-          spy={true}
-          smooth={true}
-          duration={600}
-          offset={-60}
-        >
-          PORTFOLIO
-        </Link>
-
-        <Link
-          to="contact-container"
-          spy={true}
-          smooth={true}
-          duration={600}
-          offset={-47}
-        >
-          CONTACT
-        </Link>
-      </div>
-
-      <div className="mobile">
-        <div className="drop-down-menu">
-          <FiMenu onClick={toggleDrawer(true)} className="menu-icon" />
-
-          <SwipeableDrawer
-            anchor={"top"}
-            open={open}
-            onClose={toggleDrawer(false)}
-            onOpen={toggleDrawer(true)}
-            transitionDuration={300}
-          >
-            <AiOutlineClose onClick={toggleDrawer(false)} />
-
-            {list("top")}
-          </SwipeableDrawer>
-        </div>
-      </div>
-    </div>
-  );
-}
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
