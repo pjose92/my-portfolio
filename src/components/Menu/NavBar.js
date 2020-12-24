@@ -14,8 +14,8 @@ const Navbar = props => {
           <NavLinks>
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="skillset">Skills</a>
-            <a href="projects">Projects</a>
+            <a href="#skillset">Skills</a>
+            <a href="#projects">Projects</a>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu
