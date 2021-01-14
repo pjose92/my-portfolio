@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PDF from '../About/josePFrontEnd.pdf'
+import PDF from '../About/PerezJoseFrontEnd.pdf'
 
 const Wrapper = styled.div`
   min-height: 200px;
