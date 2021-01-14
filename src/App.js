@@ -24,8 +24,8 @@ const App = () => {
     <Header />
     <Nav navbarState={navbarOpen} handleNavbar={handleNavbar} />
     <About />
-    <SkillSet />
     <Projects />
+    <SkillSet />
     <Footer />
   </div>
   );

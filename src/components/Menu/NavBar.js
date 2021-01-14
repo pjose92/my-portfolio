@@ -5,35 +5,6 @@ import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
 
-const Navbar = props => {
-  return (
-    <>
-      <NavBar>
-        <FlexContainer>
-          <Brand />
-          <NavLinks>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skillset">Skills</a>
-            <a href="#projects">Projects</a>
-          </NavLinks>
-          <BurgerWrapper>
-            <BurgerMenu
-              navbarState={props.navbarState}
-              handleNavbar={props.handleNavbar}
-            />
-          </BurgerWrapper>
-        </FlexContainer>
-      </NavBar>
-      <CollapseMenu
-        navbarState={props.navbarState}
-        handleNavbar={props.handleNavbar}
-      />
-    </>
-  );
-};
-
-export default Navbar;
 
 const NavBar = styled.nav`
   position: fixed;
@@ -87,3 +58,34 @@ const BurgerWrapper = styled.div`
     display: none;
   }
 `;
+
+
+const Navbar = props => {
+  return (
+    <>
+      <NavBar>
+        <FlexContainer>
+          <Brand />
+          <NavLinks>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skillset">Skills</a>
+          </NavLinks>
+          <BurgerWrapper>
+            <BurgerMenu
+              navbarState={props.navbarState}
+              handleNavbar={props.handleNavbar}
+            />
+          </BurgerWrapper>
+        </FlexContainer>
+      </NavBar>
+      <CollapseMenu
+        navbarState={props.navbarState}
+        handleNavbar={props.handleNavbar}
+      />
+    </>
+  );
+};
+
+export default Navbar;

@@ -30,13 +30,13 @@ const CollapseMenu = props => {
             </a>
           </li>
           <li>
-            <a href="#skillset" onClick={props.handleNavbar}>
-              Skills
+            <a href="#projects" onClick={props.handleNavbar}>
+              Projects
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={props.handleNavbar}>
-              Projects
+            <a href="#skillset" onClick={props.handleNavbar}>
+              Skills
             </a>
           </li>
         </NavLinks>
