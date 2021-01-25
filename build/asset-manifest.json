@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8edeb1ac.chunk.css",
+    "main.js": "/static/js/main.c9b0f526.chunk.js",
+    "main.js.map": "/static/js/main.c9b0f526.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4be9c4de.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4be9c4de.js.map",
+    "static/css/2.0d4dbe7a.chunk.css": "/static/css/2.0d4dbe7a.chunk.css",
+    "static/js/2.0e1e56a0.chunk.js": "/static/js/2.0e1e56a0.chunk.js",
+    "static/js/2.0e1e56a0.chunk.js.map": "/static/js/2.0e1e56a0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.0d4dbe7a.chunk.css.map": "/static/css/2.0d4dbe7a.chunk.css.map",
+    "static/css/main.8edeb1ac.chunk.css.map": "/static/css/main.8edeb1ac.chunk.css.map",
+    "static/js/2.0e1e56a0.chunk.js.LICENSE.txt": "/static/js/2.0e1e56a0.chunk.js.LICENSE.txt",
+    "static/media/PerezJoseFrontEnd.09a03c0d.pdf": "/static/media/PerezJoseFrontEnd.09a03c0d.pdf",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/instaClone.4d1c4a3f.png": "/static/media/instaClone.4d1c4a3f.png",
+    "static/media/reactTodo.f43740d2.png": "/static/media/reactTodo.f43740d2.png",
+    "static/media/rickAndMorty.26b5ecb8.png": "/static/media/rickAndMorty.26b5ecb8.png",
+    "static/media/theGameofLife.3a0d4b9b.png": "/static/media/theGameofLife.3a0d4b9b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4be9c4de.js",
+    "static/css/2.0d4dbe7a.chunk.css",
+    "static/js/2.0e1e56a0.chunk.js",
+    "static/css/main.8edeb1ac.chunk.css",
+    "static/js/main.c9b0f526.chunk.js"
+  ]
+}

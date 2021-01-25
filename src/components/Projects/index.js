@@ -3,7 +3,7 @@ import Title from '../SectionTitle';
 // import Layout from './Layout';
 import Wrapper from '../SectionWrapper';
 
-import { FaReact, FaGithub } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiStyledComponents, SiMaterialUi, SiReactrouter } from "react-icons/si";
 
@@ -26,7 +26,7 @@ const Projects = () => {
         <div className="project-block-1">
           <div className="project-name-img">            
             <h1>The Game of Life</h1>
-            <img src={gameOfLife} />
+            <img src={gameOfLife} alt="The Game of Life"/>
           </div>
           <div className="links">
             <a href="https://github.com/pjose92/game-of-life">
@@ -56,7 +56,7 @@ const Projects = () => {
         <div className="project-block-1">
           <div className="project-name-img">
             <h1>Instagram Clone</h1>
-            <img src={instaClone} />
+            <img src={instaClone} alt="instagram clone" />
           </div>
           <div className="links">
             <a href="https://github.com/pjose92/React-Components-Insta-Clone/tree/jose-Perezguerrero">
@@ -86,7 +86,7 @@ const Projects = () => {
         <div className="project-block-1">
           <div className="project-name-img">
             <h1>Rick and Morty Fan Page</h1>
-            <img src={rickAndMorty} />
+            <img src={rickAndMorty} alt="rick and morty" />
           </div>
           <div className="links">
             <a href="https://github.com/pjose92/Sprint-Challenge-Single-Page-Apps/tree/jose-Perezguerrero">
@@ -115,7 +115,7 @@ const Projects = () => {
         <div className="project-block-1">
           <div className="project-name-img">
             <h1>ToDo Web App</h1>
-            <img src={reactTodo} />
+            <img src={reactTodo} alt="react to do" />
           </div>
           <div className="links">
             <a href="https://github.com/pjose92/React-Todo/tree/jose-Perezguerrero">
