@@ -43,6 +43,9 @@ const Projects = () => {
           </div>
           <div className="Libaries">
             <div className="libaries-subtitle">
+              <p>Technologies used:</p>
+            </div>
+            <div className="libaries-icons">
               <FaReact />
               <IoLogoJavascript />
               <SiStyledComponents />
@@ -103,6 +106,9 @@ const Projects = () => {
           </div>
           <div className="Libaries">
             <div className="libaries-subtitle">
+              <p>Technologies used:</p>
+            </div>
+            <div className="libaries-icons">
               <FaReact />
               <SiReactrouter />
             </div>
@@ -132,6 +138,9 @@ const Projects = () => {
           </div>
           <div className="Libaries">
             <div className="libaries-subtitle">
+              <p>Technologies used:</p>
+            </div>
+            <div className="libaries-icons">
               <FaReact />
               <SiMaterialUi />
             </div>
