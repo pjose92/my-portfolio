@@ -1,19 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Burgermenu = props => {
-  return (
-    <Wrapper onClick={props.handleNavbar}>
-      <div className={props.navbarState ? "open" : ""}>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-      </div>
-    </Wrapper>
-  );
-};
-
-export default Burgermenu;
 
 const Wrapper = styled.div`
   position: relative;
@@ -25,8 +12,8 @@ const Wrapper = styled.div`
     background: #04c2c9;
     display: block;
     position: relative;
-    width: 3.5rem;
-    height: 0.2rem;
+    width: 2.5rem;
+    height: 0.1rem;
     margin-bottom: 0.7rem;
     transition: all ease-in-out 0.2s;
   }
@@ -45,3 +32,18 @@ const Wrapper = styled.div`
     top: 11px;
   }
 `;
+
+const Burgermenu = props => {
+  return (
+    <Wrapper onClick={props.handleNavbar}>
+      <div className={props.navbarState ? "open" : ""}>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </div>
+    </Wrapper>
+  );
+};
+
+export default Burgermenu;
+

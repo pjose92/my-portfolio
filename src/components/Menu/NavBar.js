@@ -13,7 +13,7 @@ const NavBar = styled.nav`
   left: 0;
   background: #0d2538;
   z-index: 1;
-  font-size: 1.4rem;
+  font-size: 1rem;
 `;
 
 const FlexContainer = styled.div`

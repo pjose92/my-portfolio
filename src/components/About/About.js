@@ -2,12 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import Mailto from 'react-protected-mailto'
+// import Mailto from 'react-protected-mailto'
 import PDF from '../About/PerezJoseFrontEnd.pdf'
 
+const Button = styled.a`
+  background-color: dodgerblue;
+  color: white;
+  font-size: 1em;
+  margin: 25%;
+  padding: .5em 20%;
+  border: 2px solid dodgerblue;
+  border-radius: 5px;
+  :hover {
+    background-color: white;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+  }
+`;
 
 const Wrapper = styled.p`
-  width: 70%;
+  width: 20% 70%;
   line-height: 1.6;
   @media (max-width: 876px) {
     width: 100%;
@@ -43,19 +57,19 @@ const Paragraph = props => (
     <br />
     <br />
     <br />
-    Please click <a
-      href= {PDF}
-      // target="_blank"
-      style={{ color: 'dodgerblue' }}
+    <Button  
+      href={PDF}
     >
-      here
-    </a>{' '} for my resume.
+      Resume
+    </Button>
     <br />
+{/*     
     Email me at <Mailto
       email='pjose14.jp38@yahoo.com'
       headers={
         {subject:'Career Opportunity'}
-      }/>
+      }>
+        </Mailto> */}
   </Wrapper>
 );
 
