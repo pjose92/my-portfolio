@@ -1,5 +1,5 @@
 .route-project-card {
-	padding: 20px;
+	padding: 2px;
 	.project-block-1 {
 		h1 {
 			color: black;
@@ -22,7 +22,7 @@
 		.libraries {
 			border-top: solid black 1px;
 			letter-spacing: 2px;
-			margin-top: 40px;
+			margin-top: 20px;
 		}
 		.libraries-icons {
 			display: flex;
@@ -34,7 +34,7 @@
 			}
 		}
 		p {
-			font-size: 1.2rem;
+			font-size: 1rem;
 		}
 	}
 }
@@ -43,7 +43,7 @@
 	display: flex;
 	margin: 2%;
 	align-items: center;
-	margin-top: 11.5%;
+	margin-top: 5%;
 
 	.project-block-1 .project-name-img {
 		img {
@@ -123,11 +123,11 @@
 		width: 100%;
 		height: auto;
 		margin: 3%;
-		padding: 20px;
+		padding: 2px;
 	}
 	.pintereach-images-2 {
 		height: 60vh;
-		width: 20vw;
+		width: 3%;
 		margin: 3%;
 	}
 }
@@ -186,7 +186,7 @@
 						align-self: center;
 					}
 					img {
-						width: 80%;
+						width: 100%;
 					}
 				}
 				.links a {

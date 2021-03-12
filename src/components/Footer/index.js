@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
 const CopyRightText = styled.p`
   color: #fff;
-  font-size: 1rem;
+  font-size: .8rem;
   text-align: center;
 `;
 
@@ -21,7 +21,7 @@ const LinksWrapper = styled.div`
 `;
 
 const Link = styled.a`
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
   color: #f2f2f2;
   transition: 0.2s;
@@ -37,7 +37,7 @@ const Link = styled.a`
     
   }
   @media (max-width: 580px) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 `;
 

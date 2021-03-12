@@ -1,5 +1,5 @@
 .route-project-card {
-  padding: 20px;
+  padding: 2px;
 }
 
 .route-project-card .project-block-1 h1 {
@@ -30,7 +30,7 @@
 .route-project-card .project-block-2 .libraries {
   border-top: solid black 1px;
   letter-spacing: 2px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .route-project-card .project-block-2 .libraries-icons {
@@ -50,7 +50,7 @@
 }
 
 .route-project-card .project-block-2 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .route-project-card {
@@ -61,7 +61,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 11.5%;
+  margin-top: 5%;
 }
 
 .route-project-card .project-block-1 .project-name-img img {
@@ -167,12 +167,12 @@
   width: 100%;
   height: auto;
   margin: 3%;
-  padding: 20px;
+  padding: 2px;
 }
 
 .pintereach-images .pintereach-images-2 {
   height: 60vh;
-  width: 20vw;
+  width: 3%;
   margin: 3%;
 }
 
@@ -248,7 +248,7 @@
         align-self: center;
   }
   .projects-home .route-project-card .project-block-1 .project-name-img img {
-    width: 80%;
+    width: 100%;
   }
   .projects-home .route-project-card .project-block-1 .links a {
     border-bottom: 1px solid black;
