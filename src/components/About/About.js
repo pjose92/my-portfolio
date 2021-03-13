@@ -7,17 +7,15 @@ import PDF from '../About/PerezJoseFrontEnd.pdf'
 
 const Button = styled.a`
   background-color: dodgerblue;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
   color: white;
-  font-size: 1em;
-  margin: 25%;
-  padding: .5em 20%;
-  border: 2px solid dodgerblue;
-  border-radius: 5px;
-  :hover {
-    background-color: white;
-    border: 2px solid dodgerblue;
-    color: dodgerblue;
-  }
+  margin: 3%;
 `;
 
 const Wrapper = styled.p`
@@ -62,14 +60,11 @@ const Paragraph = props => (
     >
       Resume
     </Button>
-    <br />
-{/*     
-    Email me at <Mailto
-      email='pjose14.jp38@yahoo.com'
-      headers={
-        {subject:'Career Opportunity'}
-      }>
-        </Mailto> */}
+    {/* <br /> */}
+    <Button
+      href='mailto:pjose14.jp38@yahoo.com'>
+        Email
+    </Button>
   </Wrapper>
 );
 
