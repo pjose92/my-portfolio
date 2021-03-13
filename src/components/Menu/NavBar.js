@@ -11,7 +11,7 @@ const NavBar = styled.nav`
   width: 100%;
   top: 0;
   left: 0;
-  background: #0d2538;
+  background: #0F121A;
   z-index: 1;
   font-size: 1rem;
 `;

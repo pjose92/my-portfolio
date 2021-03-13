@@ -15,7 +15,7 @@ const Outer = styled.div`
   justify-content: center;
   text-align: center;
   color: #fff;
-  background-color: #1c232c;
+  background-color: #101A29;
   ;
 `;
 

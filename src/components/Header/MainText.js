@@ -7,10 +7,10 @@ import { GitHub, LinkedIn } from '@material-ui/icons';
  
 const useStyle = makeStyles(theme => ({
   title: {
-    color: "tomato"
+    color: "#1977D3"
   },
   subtitle: {
-    color: "tan",
+    color: "#1E90FF",
     marginBottom: "3rem"
   },
 

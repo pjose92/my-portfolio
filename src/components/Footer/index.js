@@ -4,7 +4,7 @@ import PDF from '../About/PerezJoseFrontEnd.pdf'
 
 const Wrapper = styled.div`
   min-height: 200px;
-  background-color: #232d38;
+  background-color: #0F121A;
 
 `;
 
@@ -23,17 +23,17 @@ const LinksWrapper = styled.div`
 const Link = styled.a`
   font-size: 1rem;
   text-decoration: none;
-  color: #f2f2f2;
+  color: white;
   transition: 0.2s;
   margin: 30px 15px;
-  background-color: #1b232c;
+  background-color: #164D85;
   border-radius: 30px;
   padding: 13px;
   &:hover {
     transform: scale(1.1);
     text-decoration: none;
-    background-color: #fff;
-    color: #111;
+    background-color: #122B48;
+    color: #164D85;
     
   }
   @media (max-width: 580px) {

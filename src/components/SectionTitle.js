@@ -6,7 +6,7 @@ const Wrapper = styled.h1`
   font-size: 3rem;
   padding: 15px 30px 15px 5px;
   display: inline-block;
-  border-bottom: 3px solid #673ab7;
+  border-bottom: 3px solid #1B83E8;
   i {
     padding-left: 10px;
     color: #${props => props.color};
