@@ -7,8 +7,6 @@ import About from './components/About/index';
 import SkillSet from './components/SkillSet/index';
 import Projects from './components/Projects/index';
 import Footer from './components/Footer/index';
-import Form from './components/Contact/contactForm'
-
 
 const App = () => {
 
