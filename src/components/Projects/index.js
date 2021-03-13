@@ -41,11 +41,11 @@ const Projects = () => {
           <div className="description">
             <p>Built a web representation of John Conway's Game of Life</p>
           </div>
-          <div className="Libaries">
-            <div className="libaries-subtitle">
+          <div className="libraries">
+            <div className="libraries-subtitle">
               <p>Technologies used:</p>
             </div>
-            <div className="libaries-icons">
+            <div className="libraries-icons">
               <FaReact />
               <IoLogoJavascript />
               <SiStyledComponents />
@@ -74,11 +74,11 @@ const Projects = () => {
           <div className="description">
             <p>Built an Instagram clone page using React. Information comes from a dummy-data file not from an actual user account.</p>
           </div>
-          <div className="Libaries">
-            <div className="libaries-subtitle">
+          <div className="libraries">
+            <div className="libraries-subtitle">
               <p>Technologies used:</p>
             </div>
-            <div className="libaries-icons">
+            <div className="libraries-icons">
               <FaReact />
             </div>
           </div>
@@ -104,11 +104,11 @@ const Projects = () => {
           <div className="description">
             <p>A Single Page Application with Client-Side Routing built in a three hour sprint challenge at Lambda School.</p>
           </div>
-          <div className="Libaries">
-            <div className="libaries-subtitle">
+          <div className="libraries">
+            <div className="libraries-subtitle">
               <p>Technologies used:</p>
             </div>
-            <div className="libaries-icons">
+            <div className="libraries-icons">
               <FaReact />
               <SiReactrouter />
             </div>
@@ -136,11 +136,11 @@ const Projects = () => {
           <div className="description">
             <p>To-Do app developed in React with class components. The App can add, cross off and clear all the list after completed. With localStorge you can refresh the page and your list will still be there.</p>
           </div>
-          <div className="Libaries">
-            <div className="libaries-subtitle">
+          <div className="libraries">
+            <div className="libraries-subtitle">
               <p>Technologies used:</p>
             </div>
-            <div className="libaries-icons">
+            <div className="libraries-icons">
               <FaReact />
               <SiMaterialUi />
             </div>

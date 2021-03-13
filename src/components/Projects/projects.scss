@@ -10,10 +10,6 @@
 			display: flex;
 			justify-content: space-evenly;
             border: 1px solid white;
-			img {
-				width: 50%;
-				margin-left: 10%;
-			}
 		}
 	}
 
@@ -25,13 +21,10 @@
 			margin-top: 20px;
 		}
 		.libraries-icons {
+			font-size:2rem;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-evenly;
-			img {
-				width: 8%;
-				margin: 20px;
-			}
 		}
 		p {
 			font-size: 1rem;
@@ -151,19 +144,11 @@
 			.description p {
 				letter-spacing: 1.2px;
 				font-size: 0.95rem;
-			}
-			.libraries-icons {
-				border-bottom: solid black 1px;
-				border-bottom: solid white 3px;
-				height: 13vh;
-				img {
-					width: 10%;
-					object-fit: contain;
 				}
 			}
 		}
 	}
-}
+
 
 @media (max-width: 500px) {
 	.projects-home {
@@ -180,7 +165,7 @@
 				margin-bottom: 0;
 				.project-name-img {
 					h1 {
-						letter-spacing: 7px;
+						letter-spacing: 5px;
 						align-content: center;
 						align-items: center;
 						align-self: center;
@@ -197,22 +182,14 @@
 				width: 92%;
 				.description p {
 					letter-spacing: 1.2px;
-					font-size: 0.95rem;
+					font-size: .95rem;
 				}
 				.libraries {
-					.libraries-subtitle {
-						margin-bottom: 20%;
-					}
+					
 					.libraries-icons {
 						display: flex;
-						margin-top: 35%;
-						border-bottom: solid white 3px;
+						margin-top: 10%;
 						align-content: center;
-						img {
-							margin: 1px;
-						height: 27.5%;
-							padding: 20px;
-						}
 					}
 				}
 			}
