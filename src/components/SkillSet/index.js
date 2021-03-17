@@ -33,29 +33,85 @@ class SkillSet extends Component {
 
         <div className="icons-about">
             <IconContext.Provider value={{ size: "2.5em", color: "#474242" }}>
-              <FaHtml5 />
-              <FaCss3Alt />
-              <FaLess />
-              <FaBootstrap />
-              <IoLogoJavascript />
-              <FaReact />
+              <div>
+                <FaHtml5 />
+                <p>HTML</p>
+              </div>
+
+              <div>
+                <FaCss3Alt />
+                <p>CSS</p>
+              </div>
+
+              <div>
+                <FaLess />
+                <p>Less</p>
+              </div>
+              
+              <div>
+                <FaBootstrap />
+                <p>Bootstrap</p>
+              </div>
             </IconContext.Provider>
           </div>
 
           <div className="icons-about">
             <IconContext.Provider value={{ size: "2.5em", color: "#474242" }}>
-              <FaDatabase />
-              <FaPython />
-              <FaNode />
-              <SiPostman />
-              <SiPostgresql />
+              
+              <div>
+                <IoLogoJavascript />
+                <p>JavaScript</p>
+              </div>
+
+              <div>
+                <FaReact />
+                <p>React</p>
+              </div>
+              
+              
+              <div>
+                <FaDatabase />
+                <p>Database</p>
+              </div>
+
+              <div>
+                <FaPython />
+                <p>Python</p>
+              </div>
             </IconContext.Provider>
           </div>
 
           <div className="icons-about">
             <IconContext.Provider value={{ size: "2.5em", color: "#474242" }}>
-              <FaGithub />
-              <DiGit />
+                            
+              <div>
+                <FaNode />
+                <p>Node.js</p>
+              </div>
+
+              <div>
+                <SiPostman />
+                <p>Postman</p>
+              </div>
+
+              <div>
+                <SiPostgresql />
+                <p>PostgreSQL</p>
+              </div>
+
+              <div>
+                <FaGithub />
+                <p>GitHub</p>
+              </div>
+            </IconContext.Provider>
+          </div>
+
+          <div className="icons-about">
+            <IconContext.Provider value={{ size: "2.5em", color: "#474242" }}>
+              <div>
+                <DiGit />
+                <p>Git</p>
+              </div>
             </IconContext.Provider>
           </div>
       </Wrapper>

@@ -17,7 +17,7 @@ import '../Projects/projects.css'
 
 const Projects = () => {
   return (
-    <Wrapper className="projects-home">
+    <Wrapper id="projects" className="projects-home">
       <div className="subtitle">
         <Title text="Projects" />
       </div>
