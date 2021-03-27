@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <Wrapper id="projects" className="projects-home">
       <div className="subtitle">
-        <Title text="Projects" />
+        <Title text="Projects"/>
       </div>
 
       <div className="route-project-card">
