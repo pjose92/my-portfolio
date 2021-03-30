@@ -40,7 +40,7 @@ const Projects = () => {
         </div>
         <div className="project-block-2">
           <div className="description">
-            <p>Built and deployed a clone of Apple Airpods Pro magic sroll effect.</p>
+            <p>Built and deployed a clone of Apple Airpods Pro magic sroll effect. Desktop only.</p>
           </div>
           <div className="libraries">
             <div className="libraries-subtitle">
