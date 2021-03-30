@@ -3,7 +3,7 @@ import Title from '../SectionTitle';
 // import Layout from './Layout';
 import Wrapper from '../SectionWrapper';
 
-import { FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiStyledComponents, SiMaterialUi, SiReactrouter } from "react-icons/si";
 
@@ -11,6 +11,7 @@ import gameOfLife from "../../Assets/theGameofLife.png"
 import instaClone from "../../Assets/instaClone.png"
 import reactTodo from "../../Assets/reactTodo.png"
 import rickAndMorty from "../../Assets/rickAndMorty.png"
+import magicScroll from "../../Assets/Magic-Scroll.png"
 
 
 import '../Projects/projects.css'
@@ -20,6 +21,38 @@ const Projects = () => {
     <Wrapper id="projects" className="projects-home">
       <div className="subtitle">
         <Title text="Projects"/>
+      </div>
+
+      <div className="route-project-card">
+        <div className="project-block-1">
+          <div className="project-name-img">            
+            <h1>Magic Scroll</h1>
+            <img src={magicScroll} alt="Magic Scroll"/>
+          </div>
+          <div className="links">
+            <a href="https://github.com/pjose92/Apple-Like-Magic-Scroll">
+              Github 
+            </a>
+            <a href="https://magicscrolling.netlify.app/">
+              Live 
+            </a>
+          </div>
+        </div>
+        <div className="project-block-2">
+          <div className="description">
+            <p>Built and deployed a clone of Apple Airpods Pro magic sroll effect.</p>
+          </div>
+          <div className="libraries">
+            <div className="libraries-subtitle">
+              <p>Technologies used:</p>
+            </div>
+            <div className="libraries-icons">
+              <FaHtml5 />
+              <FaCss3Alt />
+              <IoLogoJavascript />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="route-project-card">
@@ -72,7 +105,7 @@ const Projects = () => {
         </div>
         <div className="project-block-2">
           <div className="description">
-            <p>Built an Instagram clone page using React. Information comes from a dummy-data file not from an actual user account.</p>
+            <p>Developed an Instagram clone page using React. Information comes from a dummy-data file not from an actual user account.</p>
           </div>
           <div className="libraries">
             <div className="libraries-subtitle">
