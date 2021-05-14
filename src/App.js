@@ -18,7 +18,6 @@ const App = () => {
 
   return (
   <div>
-
     <Header />
     <Nav navbarState={navbarOpen} handleNavbar={handleNavbar} />
     <About />

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import PDF from '../About/josePFrontEnd.pdf'
 
-
 const Wrapper = styled.div`
   position: absolute;
   left: 0;

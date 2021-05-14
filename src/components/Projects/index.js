@@ -13,7 +13,6 @@ import reactTodo from "../../Assets/reactTodo.png"
 import rickAndMorty from "../../Assets/rickAndMorty.png"
 import magicScroll from "../../Assets/Magic-Scroll.png"
 
-
 import '../Projects/projects.css'
 
 const Projects = () => {

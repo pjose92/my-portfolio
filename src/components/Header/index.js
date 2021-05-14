@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
 import MainText from './MainText';
-// import SocialMediaLinks from './SocialMediaLinks';
 import AngleDown from './AngleDown';
-
 
 const Outer = styled.div`
   height: 100vh;
@@ -16,14 +13,7 @@ const Outer = styled.div`
   text-align: center;
   color: #fff;
   background-color: #101A29;
-  ;
 `;
-
-// @media (max-width: 380px) {
-//   background: url(${background}) no-repeat center center fixed;  
-//   background-size: cover;
-// }
-
 
 const IconsWrapper = styled.div`
   height: 100%;

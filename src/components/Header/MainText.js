@@ -14,7 +14,6 @@ const useStyle = makeStyles(theme => ({
     marginBottom: "3rem"
   },
 
-
   typedContainer: {
     position: "absolute",
     top: "50%",
