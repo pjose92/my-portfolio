@@ -39,7 +39,7 @@ const Projects = () => {
         </div>
         <div className="project-block-2">
           <div className="description">
-            <p>Re-Designed and deployed a one page website for a landscaping business. Met all the requierments that the business owner needed.</p>
+            <p>Re-Designed and deployed a one-page website for a landscaping business. Met all the requirements that the business owner needed.</p>
           </div>
           <div className="libraries">
             <div className="libraries-subtitle">
