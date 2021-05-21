@@ -9,8 +9,6 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiPostman, SiPostgresql } from "react-icons/si";
 import { DiGit } from "react-icons/di";
 
-
-
 class SkillSet extends Component {
   constructor() {
     super();
