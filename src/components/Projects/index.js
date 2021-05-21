@@ -5,7 +5,7 @@ import Wrapper from '../SectionWrapper';
 
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiStyledComponents, SiMaterialUi, SiReactrouter } from "react-icons/si";
+import { SiMaterialUi, SiReactrouter } from "react-icons/si";
 
 import spLandscape from "../../Assets/spLandscape.png"
 import instaClone from "../../Assets/instaClone.png"
