@@ -5,7 +5,6 @@ import PDF from '../About/PerezJoseFrontEnd.pdf'
 const Wrapper = styled.div`
   min-height: 200px;
   background-color: #0F121A;
-
 `;
 
 const CopyRightText = styled.p`
@@ -34,7 +33,6 @@ const Link = styled.a`
     text-decoration: none;
     background-color: #122B48;
     color: #164D85;
-    
   }
   @media (max-width: 580px) {
     font-size: 1.5rem;
@@ -46,7 +44,6 @@ const Footer = () => (
     <div>
 
       <LinksWrapper>
-
         <Link href={"https://github.com/pjose92"} target="_blank" className="fa fa-github fa-2x" />
         <Link href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/" target="_blank" className="fa fa-linkedin fa-2x" />
         <Link href={"https://twitter.com/jpDev7"} target="_blank" className="fa fa-twitter fa-2x" />

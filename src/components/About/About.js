@@ -45,7 +45,6 @@ const Paragraph = props => (
     and be sure to check out my{' '}
     <a
       href="https://github.com/pjose92"
-      // target="_blank"
       style={{ color: 'dodgerblue' }}
     >
       GitHub
@@ -60,7 +59,6 @@ const Paragraph = props => (
     >
       Resume
     </Button>
-    {/* <br /> */}
     <Button
       href='mailto:pjose14.jp38@yahoo.com'>
         Email
