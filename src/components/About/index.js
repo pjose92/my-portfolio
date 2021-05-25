@@ -21,7 +21,7 @@ class About extends Component {
   render() {
     return (
       <Wrapper id="about">
-        <Title text="About Me" />
+        <Title text="About Me"/>
         <Layout
           active={this.state.active}
           onEnter={this.onEnter}

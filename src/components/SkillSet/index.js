@@ -66,7 +66,6 @@ class SkillSet extends Component {
                 <p>React</p>
               </div>
               
-              
               <div>
                 <FaDatabase />
                 <p>Database</p>

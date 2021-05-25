@@ -1,6 +1,5 @@
 import React from 'react';
 import Title from '../SectionTitle';
-// import Layout from './Layout';
 import Wrapper from '../SectionWrapper';
 
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
@@ -86,7 +85,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Second Project */}
       <div className="route-project-card">
         <div className="project-block-1">
           <div className="project-name-img">
@@ -116,7 +114,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      {/* thrid Project */}
+
       <div className="route-project-card">
         <div className="project-block-1">
           <div className="project-name-img">
@@ -148,7 +146,6 @@ const Projects = () => {
         </div>
       </div>
       
-      {/* fifth Project */}
       <div className="route-project-card">
         <div className="project-block-1">
           <div className="project-name-img">
@@ -179,7 +176,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-
     </Wrapper>
   )
 }
