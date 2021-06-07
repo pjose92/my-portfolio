@@ -31,8 +31,8 @@ const Link = styled.a`
   &:hover {
     transform: scale(1.1);
     text-decoration: none;
-    background-color: #122B48;
-    color: #164D85;
+    background-color: #204f80;
+    color: #0F121A;
   }
   @media (max-width: 580px) {
     font-size: 1.5rem;
