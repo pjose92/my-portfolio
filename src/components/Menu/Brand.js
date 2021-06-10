@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Logo = styled.div`
   margin: auto 0;
-  font-size: 18px;
+  font-size: 22px;
   color: white;
 `;
 

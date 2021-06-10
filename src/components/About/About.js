@@ -35,7 +35,7 @@ const SkillsetLink = styled.span`
 
 const Paragraph = props => (
   <Wrapper active={props.active}>
-    Hello I'm Jose and welcome to my portfolio. I am a Full-Stack Web Developer with a high interest in Front End Development from Chicago, IL. My passion
+    Hello I'm Jose and welcome to my portfolio. I am a Full-Stack Developer with a high interest in Front End Development from Chicago, IL. My passion
     is coding and if I'm not moving, growing, or learning then I make sure to find a way to do so. I am eager to 
     create web solutions that inspire, educate, and empower people. I love bringing ideas to life and I'm never afraid of taking on a new challenge.
     Check my {' '}
