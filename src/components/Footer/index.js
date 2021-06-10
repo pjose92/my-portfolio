@@ -42,7 +42,6 @@ const Link = styled.a`
 const Footer = () => (
   <Wrapper>
     <div>
-
       <LinksWrapper>
         <Link href={"https://github.com/pjose92"} target="_blank" className="fa fa-github fa-2x" />
         <Link href="https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/" target="_blank" className="fa fa-linkedin fa-2x" />
@@ -50,7 +49,7 @@ const Footer = () => (
         <Link href={PDF}  target="_blank" className="fa fa-file" />
       </LinksWrapper>
       <CopyRightText>
-        &copy; 2020 Jose Perez. All rights reserved.
+        &copy; 2021 Jose Perez. All rights reserved.
       </CopyRightText>
     </div>
   </Wrapper>

@@ -46,7 +46,7 @@ const Header = () => {
         <Typed
           strings={[
             "Full-Stack Web Developer",
-            "Front End Developer",
+            "Front-End Developer",
             "Software Engineer"
           ]}
           typeSpeed={30}
@@ -56,10 +56,16 @@ const Header = () => {
       </Typography>
 
       <Box className='ghLink'>
-        <IconButton className={classes.socialButton} onClick={() => window.open('https://github.com/pjose92')}>
+        <IconButton 
+          className={classes.socialButton} 
+          onClick={() => window.open('https://github.com/pjose92')}
+          >
           <GitHub fontSize='inherit' />
         </IconButton>
-        <IconButton className={classes.socialButton} onClick={() => window.open('https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/')}>
+        <IconButton 
+          className={classes.socialButton} 
+          onClick={() => window.open('https://www.linkedin.com/in/jose-perez-guerrero-b7a50b175/')}
+          >
           <LinkedIn fontSize='inherit' />
         </IconButton>
       </Box>
