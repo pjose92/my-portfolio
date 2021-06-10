@@ -29,7 +29,7 @@ const useStyle = makeStyles(theme => ({
     fontSize: '36px',
     transition: 'all 250ms ease-in-out',
     '&:hover': {
-        color: '#676767',
+        color: '#1E90FF',
     },
   }
 }));

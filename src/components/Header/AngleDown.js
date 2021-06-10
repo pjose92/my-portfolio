@@ -24,6 +24,10 @@ const Icon = styled.span`
   cursor: pointer;
   border: 2px white solid;
   border-radius: 30px;
+  &:hover {
+    color: #1E90FF;
+    border-color: #1E90FF;
+  }
 `;
 
 const AngleDown = () => (
