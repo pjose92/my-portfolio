@@ -5,7 +5,6 @@ import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
 
-
 const NavBar = styled.nav`
   position: fixed;
   width: 100%;
@@ -58,7 +57,6 @@ const BurgerWrapper = styled.div`
     display: none;
   }
 `;
-
 
 const Navbar = props => {
   return (
