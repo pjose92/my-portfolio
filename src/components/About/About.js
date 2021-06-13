@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-// import Mailto from 'react-protected-mailto'
 import PDF from '../About/PerezJoseFrontEnd.pdf'
 
 const Button = styled.a`
