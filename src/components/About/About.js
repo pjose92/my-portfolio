@@ -7,7 +7,7 @@ import PDF from '../About/PerezJoseFrontEnd.pdf'
 const Button = styled.a`
   background-color: dodgerblue;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 20px 10px 20px;
   font-style: normal;
   font-weight: 600;
