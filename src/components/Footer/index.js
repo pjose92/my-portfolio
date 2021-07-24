@@ -49,7 +49,7 @@ const Footer = () => (
         <Link href={PDF}  target="_blank" className="fa fa-file" />
       </LinksWrapper>
       <CopyRightText>
-        &copy; 2021 Jose Perez. All rights reserved.
+        &copy; 2021 Dev.JP. All rights reserved.
       </CopyRightText>
     </div>
   </Wrapper>

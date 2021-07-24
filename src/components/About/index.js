@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Layout from './Layout';
 import Title from '../SectionTitle';
 import Wrapper from '../SectionWrapper';
-
 class About extends Component {
   constructor() {
     super();

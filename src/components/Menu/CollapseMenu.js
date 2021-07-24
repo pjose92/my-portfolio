@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import { useSpring, animated } from "react-spring";
 
 const CollapseWrapper = styled(animated.div)`
@@ -16,12 +15,9 @@ const CollapseWrapper = styled(animated.div)`
 const NavLinks = styled.ul`
   list-style-type: none;
   padding: 2rem 1rem 2rem 2rem;
-
-
   & li {
     transition: all 300ms linear 0s;
   }
-
   & a {
     font-size: 1rem;
     line-height: 2;
@@ -29,14 +25,12 @@ const NavLinks = styled.ul`
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-
     &:hover {
       color: #04c2c9;
       border-bottom: 1px solid #04c2c9;
     }
   }
 `;
-
 
 const CollapseMenu = props => {
   const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
@@ -82,4 +76,3 @@ const CollapseMenu = props => {
 };
 
 export default CollapseMenu;
-
