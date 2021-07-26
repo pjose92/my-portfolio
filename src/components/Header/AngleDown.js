@@ -25,8 +25,8 @@ const Icon = styled.span`
   border: 2px white solid;
   border-radius: 30px;
   &:hover {
-    color: #1E90FF;
-    border-color: #1E90FF;
+    color: #64ffda;
+    border-color: #64ffda;
   }
 `;
 

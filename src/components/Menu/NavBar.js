@@ -9,7 +9,7 @@ const NavBar = styled.nav`
   width: 100%;
   top: 0;
   left: 0;
-  background: #0F121A;
+  background: #050e1a;
   z-index: 1;
   font-size: 1rem;
 `;

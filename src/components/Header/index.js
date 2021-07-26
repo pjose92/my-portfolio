@@ -12,7 +12,7 @@ const Outer = styled.div`
   justify-content: center;
   text-align: center;
   color: #fff;
-  background-color: #101A29;
+  background-color: #050e1a;
 `;
 
 const IconsWrapper = styled.div`

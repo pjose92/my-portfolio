@@ -7,10 +7,10 @@ import { GitHub, LinkedIn } from '@material-ui/icons';
  
 const useStyle = makeStyles(theme => ({
   title: {
-    color: "#1977D3"
+    color: "#64ffda"
   },
   subtitle: {
-    color: "#1E90FF",
+    color: "#64ffda",
     marginBottom: "3rem"
   },
 
@@ -29,7 +29,7 @@ const useStyle = makeStyles(theme => ({
     fontSize: '36px',
     transition: 'all 250ms ease-in-out',
     '&:hover': {
-        color: '#1E90FF',
+        color: '#64ffda',
     },
   }
 }));
