@@ -50,7 +50,10 @@ const App = () => {
       {/* <Cursor ref={posRef} /> */}
 
       <Header />
-      <Nav navbarState={navbarOpen} handleNavbar={handleNavbar} />
+      <Nav 
+        navbarState={navbarOpen} 
+        handleNavbar={handleNavbar} 
+      />
       <About />
       <Projects />
       <SkillSet />
